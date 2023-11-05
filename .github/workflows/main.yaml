@@ -28,11 +28,3 @@ jobs:
           author_name: Latex Compiler
           author_email: noreplay@users.noreply.github.com
           message: Automatically updating the CV
-
-      - name: Deploy to Github Pages
-        uses: s0/git-publish-subdir-action@develop
-        env:
-          REPO: self
-          BRANCH: gh-pages
-          FOLDER: root
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
